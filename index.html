@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Personal Gnomic Suggestions — Strategies I've developed to get unstuck</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="manifest" href="/manifest.json">
+</head>
+
+
+<script type="text/javascript">
+
+	function getRandomInt(max) {
+		return Math.floor(Math.random() * Math.floor(max));
+	}
+
+
+let suggestion = [
+"Paddings and hierarchy are the most important things",
+"The key to success is elegance, not battalions of special cases.",
+	];
+
+	let randomSugestion = suggestion[getRandomInt(suggestion.length)];
+
+
+	window.addEventListener('load', function () {
+
+		let targetElem = document.getElementById('prompt');
+
+		targetElem.innerText = randomSugestion;
+
+	}, false);
+
+
+</script>
+
+
+<style type="text/css">
+
+html {
+	height:100%;
+}
+
+body {
+	text-align: center;
+	font-family: 'Helvetica';
+	background-color: yellow;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#prompt {
+	margin-top: 25%;
+}
+
+.content {
+flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+p {
+		opacity: 0.5;
+	}
+
+</style>
+
+
+<body>
+
+	<div class="content">
+		<h1 id="prompt"></h1>
+	</div>
+	
+	
+	
+
+    <footer>
+
+		<p>Inspired by Brian Eno's <a href="https://en.wikipedia.org/wiki/Oblique_Strategies">Oblique Strategies</a> this is a personal deck of prompts I can use to get unstuck.</p>     
+    
+    </footer>
+
+
+</body>
+
+
+
+</html>
